@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-// import { projects } from './data';
 
 const client = createClient({
   space: 'ksez9gltz1ra',
   environment: 'master',
   accessToken: import.meta.env.VITE_API_KEY,
-  // accessToken: 'kNhLiHZs9BOwDynnZtF75hN-BLJJzXjqzZJorZ1bZoI',
 });
 
 export const useFetchProjects = () => {
